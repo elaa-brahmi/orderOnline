@@ -116,7 +116,7 @@
 
                         },
                 error: function(jqXHR, textStatus, errorThrown) {
-                    console.error('Network response was not ok:', textStatus, errorThrown);
+                    console.log('Network response was not ok:', textStatus, errorThrown);
                 }
             });
         }
