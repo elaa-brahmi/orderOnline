@@ -79,8 +79,8 @@
                             this.style.color = "white";
                         });
 
-                        link.addEventListener("click",function(e){
-                            e.preventDefault();
+                        link.addEventListener("click",function(){
+
                             const food_id=this.getAttribute("food-id");
                             var div=document.getElementById("select-food");
                             div.style.display="block";
@@ -91,6 +91,7 @@
                                 type:"GET",
                                 dataType:'JSON',
                                 success:function(data){
+
                                     if (data.food) {
                                         food_container.innerHTML += `
                                             <div class="card">
@@ -100,11 +101,11 @@
                                             </div>
                                         `;
                                     } else {
-                                        console.error("Food data not found");
+                                        console.log("Food data not found");
                                     }
                                 },
                                 error: function(jqXHR, textStatus, errorThrown) {
-                                        console.error('Network response was not ok:', textStatus, errorThrown);
+                                        console.log('Network response was not ok:', textStatus, errorThrown);
                                     }
 
                             });
