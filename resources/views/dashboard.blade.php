@@ -39,7 +39,7 @@
      function handle(total){
         let dic = {
         "id_food":"",
-        "cheese_options": [],
+        "cheese_options":[],
         "food_name":"",
         "price":total
         };
@@ -264,35 +264,11 @@
                                                 </div>
                                             </div>`;
                                                 handle(foundItem.price);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 }
                                     else {
                                         console.log("Food data not found");
                                     }
-
                           });
-
-
-
                          });
                         },
                 error: function(jqXHR, textStatus, errorThrown) {
@@ -300,11 +276,9 @@
                 }
             });
         }
-
         var a1 = document.getElementById("b1");
         a1.classList.add('clicked');
         loadFoods('burger');
-
         document.querySelectorAll('a[data-category]').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
