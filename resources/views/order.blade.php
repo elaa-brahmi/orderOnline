@@ -5,7 +5,7 @@
 
 </head>
 <body>
-    <form action="{{ route("confirmOrder") }}" method="post" class="container fluid" id="orderForm">
+    <form action="{{ route("confirmOrder") }}" method="POST" class="container fluid" id="orderForm">
         @csrf
         <div class="row ">
             <div class="col-md-6">
