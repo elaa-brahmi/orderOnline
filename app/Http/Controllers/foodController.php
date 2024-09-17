@@ -22,6 +22,7 @@ class foodController extends Controller
     }
     public function showbyid($food_id){
         $food=Food::where('idfood',$food_id)->first();
+        dd($food);
         if(request()->ajax()){
             return response()->json(["food" => $food]);
         }
