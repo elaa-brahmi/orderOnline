@@ -3,7 +3,7 @@ session_start();?>
 @extends('layouts.layout')
 @section("content")
 <div class="col-md-6 mx-auto">
-<form method="POST" action="{{ route("auth") }}">
+<form method="POST" action="{{ route("espaceAdmin") }}">
     @csrf
     <br>
     <label for="login">login</label>
