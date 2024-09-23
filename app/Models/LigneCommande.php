@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ligne_commande extends Model
+class LigneCommande extends Model
 {
     use HasFactory;
     protected $fillable=['idcommande','idfood','price','quantity'];
