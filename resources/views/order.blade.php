@@ -66,6 +66,7 @@
 
             // Submit the form after adding the cart data
             this.submit();
+            localStorage.removeItem('cart');
         });
     </script>
 
