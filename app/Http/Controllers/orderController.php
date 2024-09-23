@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Client;
@@ -31,7 +30,7 @@ class orderController extends Controller
         $cart = json_decode($request->input('cart'), true);
         foreach($cart as $item){
             $ligne_commande=new LigneCommande();
-            $ligne_commande->idcommande=$commande->idcommande;
+            $ligne_commande->idcommande=$commande->id;
             $ligne_commande->idfood=$item['id_food'];
             $ligne_commande->price=$item['price'];
             $ligne_commande->food_name=$item['food_name'];
