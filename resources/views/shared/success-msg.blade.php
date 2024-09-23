@@ -10,3 +10,14 @@
 
 
 @endif
+@if(session()->has("foodadded"))
+<div class="alert alert-success">
+    {{ session('foodadded') }}
+</div>
+@endif
+
+@if(session()->has("foodupdated"))
+<div class="alert alert-success">
+    {{ session('foodupdated') }}
+</div>
+@endif
